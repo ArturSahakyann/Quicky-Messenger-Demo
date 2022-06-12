@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="messenger.css">
+  <link rel="stylesheet" href="media.css">
+  <title>Quicky</title>
+</head>
+
+<body>
+  <div class="closeElement"></div>
+  <div class="closeElementTwo"></div>
+  <div class="closeElementThree"></div>
+
+  <div class="general">
+    <div class="firstMenu">
+
+      <!-- this is messenger icon  -->
+
+      <div class="iconForMessenger">
+        <svg height="30" width="30" viewBox="0 0 512 511">
+          <g>
+            <path
+              d="m120.65625 512.476562c-7.25 0-14.445312-2.023437-20.761719-6.007812-10.929687-6.902344-17.703125-18.734375-18.117187-31.660156l-1.261719-41.390625c-51.90625-46.542969-80.515625-111.890625-80.515625-183.992188 0-68.816406 26.378906-132.101562 74.269531-178.199219 47.390625-45.609374 111.929688-70.726562 181.730469-70.726562s134.339844 25.117188 181.730469 70.726562c47.890625 46.097657 74.269531 109.382813 74.269531 178.199219 0 68.8125-26.378906 132.097657-74.269531 178.195313-47.390625 45.609375-111.929688 70.730468-181.730469 70.730468-25.164062 0-49.789062-3.253906-73.195312-9.667968l-46.464844 20.5c-5.035156 2.207031-10.371094 3.292968-15.683594 3.292968zm135.34375-471.976562c-123.140625 0-216 89.816406-216 208.925781 0 60.667969 23.957031 115.511719 67.457031 154.425781 8.023438 7.226563 12.628907 17.015626 13.015625 27.609376l.003906.125 1.234376 40.332031 45.300781-19.988281c8.15625-3.589844 17.355469-4.28125 25.921875-1.945313 20.132812 5.554687 41.332031 8.363281 63.066406 8.363281 123.140625 0 216-89.816406 216-208.921875 0-119.109375-92.859375-208.925781-216-208.925781zm-125.863281 290.628906 74.746093-57.628906c5.050782-3.789062 12.003907-3.839844 17.101563-.046875l55.308594 42.992187c16.578125 12.371094 40.304687 8.007813 51.355469-9.433593l69.519531-110.242188c6.714843-10.523437-6.335938-22.417969-16.292969-14.882812l-74.710938 56.613281c-5.050781 3.792969-12.003906 3.839844-17.101562.046875l-55.308594-41.988281c-16.578125-12.371094-40.304687-8.011719-51.355468 9.429687l-69.554688 110.253907c-6.714844 10.523437 6.335938 22.421874 16.292969 14.886718zm0 0"
+              data-original="#000000" class="active-path" data-old_color="#000000" fill="#665dfe"></path>
+          </g>
+        </svg>
+      </div>
+
+      <!-- finishing messenger icon -->
+
+
+      <!-- other fields -->
+
+      <div class="chats miniIcons">
+        <svg class="hw-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z">
+          </path>
+        </svg>
+      </div>
+      <div class="calls miniIcons">
+        <svg class="hw-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+          </path>
+        </svg>
+      </div>
+      <div class="friends miniIcons">
+        <svg class="hw-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+          </path>
+        </svg>
+      </div>
+      <div class="profile miniIcons">
+        <svg class="hw-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+          </path>
+        </svg>
+      </div>
+
+      <!-- finishing other fields  -->
+
+    </div>
+
+    <div class="blockForChats">
+
+      <!-- this is chat categories and searching -->
+
+      <div class="forCategories">
+
+
+        <!-- this is chat title  -->
+
+        <div class="chatTitle">
+          <span class="titleName">Chats</span>
+
+          <div class="bellIcon">
+            <svg class="hw-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+              </path>
+            </svg>
+          </div>
+
+
+          <div class="dropdown">
+            <svg class="hw-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+              </path>
+            </svg>
+          </div>
+
+          <div class="dropdownItems">
+            <div class="newChat ddItem">New Chat</div>
+            <div class="createGroup ddItem">Create Group</div>
+            <div class="inviteOthers ddItem">Invite Others</div>
+          </div>
+        </div>
+
+
+
+        <!-- end chat title  -->
+
+        <div class="conversationBlock">
+          <div class="newChatTitle">New Chat
+            <div class="closee close closeWel convClose">X</div>
+          </div>
+          <div class="newChatSearach">
+            <input type="text" class="searching" placeholder="Search...">
+          </div>
+
+          <div class="newChatNames">
+            <div class="roundAvatar">
+              <img src="./images/christina.png">
+            </div>
+            <span class="friendName">Catherine Richardson</span>
+            <div class="statusName">Online</div>
+          </div>
+          <div class="newChatNames">
+            <div class="roundAvatar">
+              <img src="./images/kolumbos.png">
+            </div>
+            <span class="friendName">Katherine Shchneider</span>
+            <div class="statusName">Online</div>
+          </div>
+          <div class="newChatNames">
+            <div class="roundAvatar">
+              <img src="./images/jack.png">
+            </div>
+            <span class="friendName">Bittani K.Williams</span>
+            <div class="statusName">Offline</div>
+          </div>
+          <div class="newChatNames">
+            <div class="roundAvatar">
+              <img src="./images/tammy.png">
+            </div>
+            <span class="friendName">Christina Turner</span>
+            <div class="statusName">Busy</div>
+          </div>
+          <div class="newChatNames">
+            <div class="roundAvatar">
+              <img src="./images/annie.png">
+            </div>
+            <span class="friendName">Annie Richardson</span>
+            <div class="statusName">Away</div>
+          </div>
+        </div>
+
+        <div class="menuForCreatingGroup">
+          <div class="newChatTitle">Create a New Group
+            <div class="closeeeee close">X</div>
+          </div>
+          <div class="groupName">
+            <span class="groupNameTt">Group Name</span>
+            <br>
+            <input type="text" class="searching" placeholder="Type Your Group Name Here">
+          </div>
+          <div class="chooseProfilePicture">
+            <span class="groupNameTt">Choose Profile Picture</span>
+            <br>
+            <input type="file" class="searching">
+          </div>
+
+          <div class="groupPrivacy">
+            <span class="privacyTitle">Group Privacy</span>
+            <div class="enterType">
+              <div class="publicGroup privacyType">
+                <input type="radio" name="enter"><span class="enter">Public Group</span>
+              </div>
+              <div class="privateGroup privacyType">
+                <input type="radio" name="enter"><span class="enter">Private Group</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="forButtons">
+            <span>Cancel</span>
+            <button class="previous reject">Previous</button>
+            <button class="next accept">Next</button>
+          </div>
+        </div>
+
+
+        <div class="inviteOthersItems">
+          <span class="privacyTitle">Group Privacy
+            <div class="closeeeeee">X</div>
+          </span>
+          <div class="email">
+            <span class="emailTitle">Email Address</span>
+            <br>
+            <input type="email" class="emailInput" placeholder="type your email">
+          </div>
+          <div class="inviteMessage">
+            <span class="emailTitle">Invitation message</span>
+            <br>
+            <input type="text" class="message" placeholder="Write your message here">
+          </div>
+
+          <div class="forButtons">
+            <span>Close</span>
+            <button class="next accept">Next</button>
+          </div>
+        </div>
+
+
+        <!-- this is menu for notification  -->
+
+        <div class="bellDropdown">
+          <div class="notificationTitle">Notifications
+            <div class="closeNotTitle">X</div>
+          </div>
+
+          <div class="firstRequest">
+
+            <div class="roundAvatar">
+              <div class="avatarIcon">
+                <svg class="hw-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="friendInformation">
+              <span class="friendName">Catherine Richardson</span>
+              <span class="infoFr">Send you a friend request</span>
+            </div>
+
+            <div class="timeLine">5 mins ago</div>
+
+            <button class="reject">Reject</button>
+            <button class="accept">Accept</button>
+          </div>
+
+
+          <div class="secondRequest">
+
+            <div class="roundAvatar">
+              <div class="avatarIcon">
+                <svg class="hw-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="friendInformation">
+              <span class="friendName">Katelyn Valdez</span>
+              <span class="infoFr">accepted your friend request</span>
+            </div>
+
+            <div class="timeLine">25 mins ago</div>
+
+          </div>
+
+          <div class="thirdRequest">
+
+            <div class="roundAvatar">
+              <div class="avatarIcon">
+                <svg class="hw-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="friendInformation">
+              <span class="friendName">Eva Walker</span>
+              <span class="infoFr">updated profile picture</span>
+            </div>
+
+            <div class="timeLine">5 mins ago</div>
+
+          </div>
+
+          <div class="fourthRequest">
+
+            <div class="roundAvatar">
+              <div class="avatarIcon">
+                <svg class="hw-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="friendInformation">
+              <span class="friendName">Bonnie Torres</span>
+              <span class="infoFr">accepted your friend request</span>
+            </div>
+
+            <div class="timeLine">5 mins ago</div>
+
+          </div>
+
+          <div class="fivedRequest">
+
+            <div class="roundAvatar">
+              <div class="avatarIcon">
+                <svg class="hw-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="friendInformation">
+              <span class="friendName">Christopher Garcia</span>
+              <span class="infoFr">updated profile picture</span>
+            </div>
+
+            <div class="timeLine">5 mins ago</div>
+
+          </div>
+
+          <div class="clearAll"><span class="clear">Clear All</span></div>
+
+        </div>
+
+
+
+
+        <!-- this is menu for notification  -->
+
+        <div class="inputsAndButtons">
+          <div class="dropdownTwo">All chats</div>
+          <input class="inputUser" type="text" placeholder="Search users...">
+        </div>
+        <div class="dropdownTwoPartOne">
+          <div class="clickAllChats all">All Chats</div>
+          <div class="clickFriends all">Friends</div>
+          <div class="clickGroups all">Groups</div>
+          <div class="clickUnread all">Unread</div>
+          <div class="clickArchived all">Archived</div>
+        </div>
+      </div>
+
+
+      <div class="allChats">
+
+        <div class="chates chatOne friends catherineRichardson">
+          <div class="roundAvatar">
+            <img src="./images/christina.png">
+          </div>
+          <div class="status"></div>
+
+          <div class="forNames">
+            <span class="writerName">Catherine Richardson</span>
+            <span class="writerTimeLine">Just Now</span>
+          </div>
+
+          <div class="forText">I'm sorry,I didn't catch that.Could you ple...</div>
+        </div>
+
+        <div class="chates chatTwo groups">
+          <div class="roundAvatar">
+            <div class="groupIcon">
+              <svg class="hw-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="forNames">
+            <span class="writerName">ThemeForest Group</span>
+            <span class="writerTimeLine">10:20 pm</span>
+          </div>
+        </div>
+
+        <div class="chates chatThree friends unread">
+          <div class="roundAvatar">
+            <div class="chatThreeFrName">EW</div>
+          </div>
+          <div class="status">
+            <div class="miniRound"></div>
+          </div>
+
+          <div class="forNames">
+            <span class="writerName">Ewa Walker</span>
+            <span class="writerTimeLine">09:36 am</span>
+          </div>
+        </div>
+
+        <div class="chates chatFour friends">
+          <div class="roundAvatar">
+            <img src="./images/christopher.png">
+          </div>
+          <div class="status">
+            <div class="miniRound"></div>
+          </div>
+
+          <div class="forNames">
+            <span class="writerName">Christopher Garcia</span>
+            <span class="writerTimeLine">Yesterday</span>
+          </div>
+        </div>
+
+        <div class="chates chatFive unread">
+          <div class="roundAvatar">
+            <img src="./images/kolumbos.png">
+          </div>
+          <div class="status">
+            <div class="miniRound"></div>
+          </div>
+
+          <div class="forNames">
+            <span class="writerName">Christina Turner</span>
+            <span class="writerTimeLine">31/05/2022</span>
+          </div>
+        </div>
+
+        <div class="chates chatSix friends">
+          <div class="roundAvatar">
+            <img src="./images/tammy.png">
+          </div>
+          <div class="status">
+            <div class="miniRound"></div>
+          </div>
+
+          <div class="forNames">
+            <span class="writerName">Tammy Martinez</span>
+            <span class="writerTimeLine">24/04/2022</span>
+          </div>
+        </div>
+
+        <div class="chates chatSeven friends">
+          <div class="roundAvatar">
+            <img src="./images/bonnie.png">
+          </div>
+          <div class="status">
+            <div class="miniRound"></div>
+          </div>
+
+
+          <div class="forNames">
+            <span class="writerName">Bonnie Torres</span>
+            <span class="writerTimeLine">20/04/2022</span>
+          </div>
+        </div>
+
+        <div class="chates chatEight friends">
+          <div class="roundAvatar">
+            <img src="./images/jack.png">
+          </div>
+          <div class="status">
+            <div class="miniRound"></div>
+          </div>
+
+          <div class="forNames">
+            <span class="writerName">Jacqueline James</span>
+            <span class="writerTimeLine">15/02/2022</span>
+          </div>
+        </div>
+
+        <div class="chates chatNine archived">
+          <div class="roundAvatar">
+            <img src="./images/annie.png">
+          </div>
+          <div class="status">
+            <div class="miniRound"></div>
+          </div>
+
+
+          <div class="forNames">
+            <span class="writerName">Annie Richardson</span>
+            <span class="writerTimeLine">26/12/2019</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- end chat categories and searching  -->
+
+
+    </div>
+
+    <div class="timeToWrite">
+
+      <div class="welcome">
+        <div class="welcomeAvatar">
+          <img src="./images/kolumbos.png">
+        </div>
+        <br>
+        <div class="welcome_christina">Welcome, Christina!</div>
+        <div class="please_select">Please select a chat to Start messaging.</div>
+        <button class="startCoversation">Start a converastion</button>
+      </div>
+
+
+      <div class="menuForNewChat">
+        <div class="newChatTitle">New Chat
+          <div class="closee close closeWel">X</div>
+        </div>
+        <div class="newChatSearach">
+          <input type="text" class="searching" placeholder="Search...">
+        </div>
+
+        <div class="newChatNames">
+          <div class="roundAvatar">
+            <img src="./images/christina.png">
+          </div>
+          <span class="friendName">Catherine Richardson</span>
+          <div class="statusName">Online</div>
+        </div>
+        <div class="newChatNames">
+          <div class="roundAvatar">
+            <img src="./images/kolumbos.png">
+          </div>
+          <span class="friendName">Katherine Shchneider</span>
+          <div class="statusName">Online</div>
+        </div>
+        <div class="newChatNames">
+          <div class="roundAvatar">
+            <img src="./images/jack.png">
+          </div>
+          <span class="friendName">Bittani K.Williams</span>
+          <div class="statusName">Offline</div>
+        </div>
+        <div class="newChatNames">
+          <div class="roundAvatar">
+            <img src="./images/tammy.png">
+          </div>
+          <span class="friendName">Christina Turner</span>
+          <div class="statusName">Busy</div>
+        </div>
+        <div class="newChatNames">
+          <div class="roundAvatar">
+            <img src="./images/annie.png">
+          </div>
+          <span class="friendName">Annie Richardson</span>
+          <div class="statusName">Away</div>
+        </div>
+      </div>
+
+      <div class="catherineRichardsonChat">
+
+        <div class="infoAboutCatherine">
+
+          <div class="blockForNS">
+            <div class="userAvatar">
+              <img src="./images/christina.png">
+            </div>
+            <div class="catherine_status"></div>
+            <span class="userNamee">Catherina Richardson</span>
+            <span class="online">Online</span>
+          </div>
+
+          <div class="blockForOtherIcons">
+            <div class="iconsBlocks caherineSearch">
+              <svg class="hw-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+
+            <div class="iconsBlocks">
+              <svg class="hw-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                </path>
+              </svg>
+            </div>
+
+            <div class="iconsBlocks view">
+              <svg class="hw-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="searchCaherineDiv">
+          <input type="text" class="searchMessage" placeholder="Search...">
+        </div>
+
+        <div class="viewInfo">
+          <div class="viewItems">
+            <div class="viewIcon">
+              <svg class="hw-20 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <span class="viewSpan viewINF">View Info</span>
+          </div>
+          <div class="viewItems">
+            <div class="viewIcon">
+              <svg class="hw-20 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
+                  clip-rule="evenodd"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path>
+              </svg>
+            </div>
+            <span class="viewSpan">Mute Notifications</span>
+          </div>
+          <div class="viewItems">
+            <div class="viewIcon">
+              <svg class="hw-20 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                </path>
+              </svg>
+            </div>
+            <span class="viewSpan">Wallper</span>
+          </div>
+          <div class="viewItems">
+            <div class="viewIcon">
+              <svg class="hw-20 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+              </svg>
+            </div>
+            <span class="viewSpan">Archive</span>
+          </div>
+          <div class="viewItems">
+            <div class="viewIcon">
+              <svg class="hw-20 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                </path>
+              </svg>
+            </div>
+            <span class="viewSpan">Delete</span>
+          </div>
+          <div class="viewItems">
+            <div class="viewIcon">
+              <svg style="color: #FF337C;" class="hw-20 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636">
+                </path>
+              </svg>
+            </div>
+            <span class="viewSpan blockSpan">Block</span>
+          </div>
+        </div>
+
+        <div class="profileDetails">
+
+          <div class="profileTitle">
+            <b class="details">Profile Details</b>
+            <div class="closeDetails"><b>X</b></div>
+          </div>
+
+          <div class="userInformation">
+
+            <div class="nameAndAvatar">
+              <div class="userAvaTar">
+                <img src="./images/christina.png">
+              </div>
+            </div>
+
+            <span class="userNaMe">Catherina Richardson</span>
+            <div class="location">
+              <div class="locationIcon">
+                <svg style="cursor: auto;" class="hw-18 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <span class="city">San Francisco,USA</span>
+            </div>
+
+            <div class="otherIcOns">
+              <div class="icOns addFriend">
+                <svg class="hw-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                </svg>
+              </div>
+              <div class="icOns like">
+                <svg class="hw-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                  </path>
+                </svg>
+              </div>
+              <div class="icOns block">
+                <svg class="hw-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636">
+                  </path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="addressInfoTitle">
+              <span>User Information</span>
+              <div class="addressIcon">
+                <svg class="hw-20 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="addressInformation">
+              <div class="phone">
+                <span class="phoneTitle">Phone</span><br>
+                <span class="number">+01-222-364-522</span>
+              </div>
+              <div class="phone">
+                <span class="phoneTitle">Email</span><br>
+                <span class="number">catherine.richardson@gmail.com</span>
+              </div>
+              <div class="phone">
+                <span class="phoneTitle">Adress</span><br>
+                <span class="number">Yerevan,Armenia</span>
+              </div>
+            </div>
+
+            <div class="lastImages">
+              <b>Last Media</b>
+              <div class="addressIcon">
+                <svg class="hw-20 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              </div>
+            </div>
+            <div class="mediaInformation">
+              <div class="images">
+                <img src="./images/01.jpg" alt="No internet connection">
+              </div>
+              <div class="images">
+                <img src="./images/02.jpg" alt="No internet connection">
+              </div>
+              <div class="images">
+                <img src="./images/03.jpg" alt="No internet connection">
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="main_messages">
+          <div class="yesterday">Yesterday</div>
+
+          <div class="firstMessage">
+            <b>I have to give a presentation on global warming on Friday, and I am so nervous.</b>
+          </div>
+          <div class="messageAvatar"></div>
+          <div class="messageClock">9:12AM</div>
+
+          <div class="messageTapIcon">
+            <svg class="hw-18 hw-mes" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+              </path>
+            </svg>
+          </div>
+
+          <div class="secondMessage">
+            <b>First of all, you need to understand the subject matter thoroughly. You need to know what is global
+              warming, what causes
+              global warming, and what people should do to abate the effects of global warming.</b>
+          </div>
+          <div class="secondMessageAvatar"></div>
+
+          <div class="secondMessageClock">9:12AM</div>
+
+          <div class="messageTapIcon secondMessageTapIcon">
+            <svg class="hw-18 hw-mes" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+              </path>
+            </svg>
+          </div>
+
+          <div class="firstMessage">
+            <b>I have done a lot of research on the subject, and I know I can answer any questions I will receive from
+              the audience.
+            </b>
+          </div>
+          <div class="messageAvatar"></div>
+          <div class="messageClock">9:12AM</div>
+
+          <div class="messageTapIcon">
+            <svg class="hw-18 hw-mes" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+              </path>
+            </svg>
+          </div>
+
+          <div class="secondMessage secondMessagePartTwo">
+            <b>Yes, what you should present first, second and third…</b>
+          </div>
+          <div class="secondMessageAvatar"></div>
+
+          <div class="secondMessageClock">9:12AM</div>
+
+          <div class="messageTapIcon secondMessageTapIcon">
+            <svg class="hw-18 hw-mes" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+              </path>
+            </svg>
+          </div>
+
+          <div class="firstMessage">
+            <b>I have to give a presentation on global warming on Friday, and I am so nervous.</b>
+          </div>
+          <div class="messageAvatar"></div>
+          <div class="messageClock">9:12AM</div>
+
+          <div class="messageTapIcon">
+            <svg class="hw-18 hw-mes" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="inputBlock">
+          <div class="plus">
+            <svg class="hw-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+          </div>
+
+          <input type="text" class="typeMessage" placeholder="Type your message here...">
+          <div class="smiles_and_arrows">
+            <div class="smiles">❤</div>
+            <div class="arrow">
+              <svg class="hw-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="secondMenu">
+      <div class="apps">
+        <div class="appsIcon">
+          <svg class="hw-20" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
+            </path>
+          </svg>
+        </div>
+        <br>
+        <span>Apps</span>
+      </div>
+
+      <div class="translator defColor">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129">
+          </path>
+        </svg>
+      </div>
+
+
+      <div class="menuForTranslator">
+        <div class="translatorTitle">
+          <span>Translator</span>
+          <span class="closeeLl">X</span>
+        </div>
+        <div class="chooseLanguage"></div>
+        <div class="english">English</div>
+        <div class="itemsLang">
+          <div class="englishTwo miniItemm">English</div>
+          <div class="hindi miniItemm">Hindi</div>
+          <div class="irish miniItemm">Irish</div>
+          <div class="latinTwo miniItemm">Latin</div>
+        </div>
+        <div class="english latin">Latin</div>
+        <div class="itemsLangTwo">
+          <div class="englishTwoo miniItemm">English</div>
+          <div class="hindii miniItemm">Hindi</div>
+          <div class="irishh miniItemm">Irish</div>
+          <div class="latinTwoo miniItemm">Latin</div>
+        </div>
+
+        <br>
+        <textarea name="" id="" cols="30" rows="10" class="messageInp"
+          placeholder="Rise and shine, buddy! It’s time to show this world who you are. I hope your morning is filled with peace and harmony, and you are ready to start your day. Hope that you’re starting it with a smile!Rise and shine, buddy! It’s time to show this world who you are. I hope your morning is filled with peace and harmony, and you are ready to start your day. Hope that you’re starting it with a smile!"></textarea>
+        <div class="card">
+          Et surge inluminare buddy! Aliquam quis es ut ostenderet hoc mundo. Utinam impleatur concordiam mane et dies
+          incipere velis. Spes autem quae erant incipiens cum risu!
+        </div>
+
+        <button class="translate">Translate</button>
+      </div>
+
+
+      <div class="notes defColor">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+          </path>
+        </svg>
+      </div>
+
+
+      <div class="menuForNotes">
+        <div class="translatorTitle">
+          <span>Notes</span>
+          <span class="clloseNotesDd closeeLl">X</span>
+        </div>
+
+        <div class="allNotes">
+          <div class="allNotesDd">All Notes
+          </div>
+          <input type="text" class="notesInput" placeholder="Search Notes...">
+        </div>
+
+        <div class="allNotesDdItemss">
+          <div class="itemsTitlle">All Notes</div>
+          <div class="itemsTitlle">Personal</div>
+          <div class="itemsTitlle">Work</div>
+          <div class="itemsTitlle">Favourite</div>
+          <div class="itemsTitlle">Important</div>
+        </div>
+
+        <div class="notesInfo">
+          <div class="notesInfoOne">
+            <span class="sunday">Sunday, 20/12/2020 at 12:26 PM</span>
+            <br>
+            <span class="meeting">Metting with John Doe</span>
+            <br>
+            <span class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum odio vitae
+              sapiente eius obcaecati.</span>
+
+            <div class="personal">
+              <div class="personalIcn">Personal</div>
+              <div class="personalItems">
+                <svg class="hw-20" xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="notesInfoOne notesInfoTwo">
+            <span class="sunday">Sunday, 20/12/2020 at 12:26 PM</span>
+            <br>
+            <span class="meeting">Metting with John Doe</span>
+            <br>
+            <span class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum odio vitae
+              sapiente eius obcaecati.</span>
+
+            <div class="personal">
+              <div class="personalIcnTwo">Important</div>
+              <div class="personalItems">
+                <svg class="hw-20" xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="notesInfoOne notesInfoThree">
+            <span class="sunday">Sunday, 20/12/2020 at 12:26 PM</span>
+            <br>
+            <span class="meeting">Metting with John Doe</span>
+            <br>
+            <span class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum odio vitae
+              sapiente eius obcaecati.</span>
+
+            <div class="personal">
+              <div class="personalIcnThree">Favourite</div>
+              <div class="personalItems">
+                <svg class="hw-20" xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="notesInfoOne notesInfoFour">
+            <span class="sunday">Sunday, 20/12/2020 at 12:26 PM</span>
+            <br>
+            <span class="meeting">Metting with John Doe</span>
+            <br>
+            <span class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum odio vitae
+              sapiente eius obcaecati.</span>
+
+            <div class="personal">
+              <div class="personalIcnFour">Work</div>
+              <div class="personalItems">
+                <svg class="hw-20" xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="addNoteItemsss">
+
+          <div class="aniTitle">Add New Note
+            <div class="closeee">X</div>
+          </div>
+
+          <div class="nodeTitle">
+            <div class="nodeTitleName">Note Title</div>
+          </div>
+
+          <div class="noteDeitals">
+            <input type="text" placeholder="Add note descriptions">
+          </div>
+
+          <div class="noteDeitalsTwo">
+            <div class="nodeTitleName">Note Deitals</div>
+            <textarea class="txt" name="" id="" cols="30" rows="10" placeholder="Add note descriptions"></textarea>
+          </div>
+
+          <div class="noteTag">
+            <div class="notesTagName">Note Tag</div>
+            <input type="text" placeholder="Typpe your Tag:">
+          </div>
+
+          <div class="noteBtns"></div>
+        </div>
+
+
+        <div class="addNewNote">
+          <button class="addNote">Add New Note</button>
+        </div>
+      </div>
+
+
+      <div class="todo defColor">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
+          </path>
+        </svg>
+      </div>
+
+      <div class="settings defColor">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+          </path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+          </path>
+        </svg>
+      </div>
+    </div>
+
+
+    <div class="menuForSettings">
+
+      <div class="aniTitle settingsTitle">Settings
+        <div class="closeee settingsClose">X</div>
+      </div>
+
+      <div class="settingsItems">
+        <div class="settingsMiniItems">
+          <span class="lastSeen">Last seen</span>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="settingsMiniItems">
+          <span class="lastSeen">Read receipts</span>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="settingsMiniItems">
+          <span class="lastSeen">Media auto download</span>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="settingsMiniItems">
+          <span class="lastSeen">Notifications</span>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="settingsMiniItems">
+          <span class="lastSeen">Auto backup</span>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="settingsMiniItems">
+          <span class="lastSeen">Screen Lock</span>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="addNewNote saveSettings">
+        <button class="addNote">Save Settings</button>
+      </div>
+
+    </div>
+
+
+    <div class="menuForTask">
+      <div class="to_do_list">
+        <div class="to_do_listTitle">To-Do List
+          <div class="closeee taskClose">X</div>
+        </div>
+        <div class="taskCategories">
+          <div class="allNotes">
+            <div class="allNotesDd allTasksDd">All Tasks
+            </div>
+            <input type="text" class="notesInput" placeholder="Search Notes...">
+          </div>
+        </div>
+      </div>
+      <div class="allNotesDdItemss taskDdItems">
+        <div class="taskItemsTitle">All Tasks</div>
+        <div class="taskItemsTitle">Active</div>
+        <div class="taskItemsTitle">Finished</div>
+      </div>
+
+      <div class="taskTools">
+        <div class="taskMiniTools">
+          <div class="taskMiniToolsTitle">
+            <span class="date">20/07/2022</span><br>
+            <span class="remaining">6 task remaining</span>
+          </div>
+
+          <div class="allTasks">
+            <div class="checkboxes">
+              <input type="checkbox" id="clickk" value="Dinner with friends">
+              <label class="dinner" for="clickk">Dinner with Friends</label>
+            </div>
+
+            <div class="checkboxes">
+              <input type="checkbox" id="clickkk" value="Dinner with friends">
+              <label for="clickkk" class="dinner">Watching movie at 10:30PM</label>
+            </div>
+
+            <div class="checkboxes">
+              <input type="checkbox" id="clickkkk" value="Dinner with friends">
+              <label for="clickkkk" class="dinner">Watching a football match</label>
+            </div>
+
+            <div class="checkboxes">
+              <input type="checkbox" id="clickkkkk" value="Dinner with friends">
+              <label for="clickkkkk" class="dinner">Coffie with girlfriend</label>
+            </div>
+          </div>
+        </div>
+        <div class="taskMiniTools taskMiniToolsTwo">
+          <div class="taskMiniToolsTitle">
+            <span class="date">21/07/2022</span><br>
+            <span class="remaining">6 task remaining</span>
+          </div>
+
+          <div class="allTasks">
+            <div class="checkboxes">
+              <input type="checkbox" id="clickk" value="Dinner with friends">
+              <label class="dinner" for="clickk">Dinner with Friends</label>
+            </div>
+
+            <div class="checkboxes">
+              <input type="checkbox" id="clickkk" value="Dinner with friends">
+              <label for="clickkk" class="dinner">Watching movie at 10:30PM</label>
+            </div>
+
+            <div class="checkboxes">
+              <input type="checkbox" id="clickkkk" value="Dinner with friends">
+              <label for="clickkkk" class="dinner">Watching a football match</label>
+            </div>
+
+            <div class="checkboxes">
+              <input type="checkbox" id="clickkkkk" value="Dinner with friends">
+              <label for="clickkkkk" class="dinner">Coffie with girlfriend</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="addNewNote addNewTask">
+        <button class="addNote addTaskBigBtn">Add New Task</button>
+      </div>
+    </div>
+
+    <div class="taskItems">
+      <div class="aniTitle">Add New Task
+        <div class="closeee taskClosed">X</div>
+      </div>
+
+      <div class="taskInputs">
+        <span>Task Name:</span>
+        <br>
+        <br>
+        <input type="text" class="taskInput" placeholder="Add Task Name Here">
+        <br>
+        <br>
+        <span>Task Deitals:</span>
+        <br>
+        <textarea class="taskArea"></textarea>
+      </div>
+
+      <div class="taskButtons">
+        <button class="closeTask">Close</button>
+        <button class="addTask">Add Task</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="messenger.js"></script>
+
+</body>
+
+</html>
+
+</html>
