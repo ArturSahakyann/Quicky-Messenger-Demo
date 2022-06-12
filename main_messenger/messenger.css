@@ -1010,6 +1010,12 @@ html {
   display: none;
 }
 
+.themeForestGroup {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
 .searchCaherineDiv {
   width: 100%;
   height: 10px;
@@ -1255,6 +1261,109 @@ html {
   display: block;
 }
 
+.cloze {
+  cursor: pointer;
+  color: white;
+}
+
+.groupProfileDetials {
+  width: 340px;
+  height: 91vh;
+  background-color: #2f2f3f;
+  position: absolute;
+  z-index: 1000;
+  left: 68%;
+  display: none;
+}
+
+.userINFsec {
+  display: block;
+}
+
+.groupUsers {
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #2a2a2a;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.groupUserIcon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.groupUsersList {
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.groupHeight {
+  height: 360px;
+}
+
+.groupUserAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+
+.groupUser {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  overflow: hidden;
+}
+
+.groupUser > b {
+  line-height: 40px;
+  position: relative;
+  left: 10px;
+}
+
+.lastGroupImages {
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #27272e;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.groupMediaInformation {
+  width: 100%;
+  height: 0px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5s;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.groupMediaList {
+  height: 100px;
+}
+
 .nameAndAvatar {
   width: 100%;
   height: 350px;
@@ -1263,10 +1372,9 @@ html {
 .userAvaTar {
   width: 150px;
   height: 150px;
-  border: 1px solid white;
   border-radius: 100%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
   overflow: hidden;
 }
 
@@ -1275,21 +1383,68 @@ html {
   height: 100%;
 }
 
+.groupDocumentInformation {
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #2a2a2a;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.groupDocumentIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.groupDocumentItems {
+  width: 100%;
+  height: 0px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.gdItemsList {
+  height: 190px;
+}
+
+.gdItems {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+.gdItems > b {
+  color: white;
+  font-size: 13px;
+  position: relative;
+  left: 10px;
+  line-height: 35px;
+}
+
 .userNaMe {
   color: white;
   font-weight: bolder;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   font-size: 20px;
-  left: 80px;
-  bottom: 180px;
+  left: 73px;
+  bottom: 190px;
 }
 
 .location {
   width: 100%;
   height: 20px;
   margin-top: -175px;
-  padding-left: 95px;
+  padding-left: 90px;
 }
 
 .locationIcon {
@@ -1310,7 +1465,7 @@ html {
   width: 210px;
   height: 50px;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
 }
 
@@ -1360,6 +1515,15 @@ html {
 .addressInformation {
   width: 100%;
   height: 0px;
+  margin-top: 10px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.groupAdressInformation {
+  width: 100%;
+  height: 0px;
+  border: 1px solid red;
   margin-top: 10px;
   transition: 0.5s;
   overflow: hidden;
@@ -1431,7 +1595,24 @@ html {
   display: none;
 }
 
+.viewGroupInformation {
+  width: 180px;
+  height: 255px;
+  border-radius: 0.325rem;
+  position: absolute;
+  background-color: #2a2a2a;
+  padding-top: 13px;
+  left: 79%;
+  top: 70px;
+  z-index: 999;
+  display: none;
+}
+
 .viewList {
+  display: block;
+}
+
+.groupInformationList {
   display: block;
 }
 
@@ -1510,6 +1691,66 @@ b {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+.documents {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  border-bottom: 2px solid #2a2a2a;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.documentInformation {
+  width: 100%;
+  height: 0px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.documentTitle {
+  color: white;
+  font-size: 13px;
+  line-height: 35px;
+  margin-left: 10px;
+}
+
+.docInfoList {
+  height: 220px;
+}
+
+.documentItems {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  /* border: 1px solid white; */
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-top: 5px;
+  overflow: hidden;
+}
+
+.documentIcon {
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid white; */
+  border-radius: 100%;
+  color: white;
+  background-color: #665dfe;
+  padding: 12px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.documentIcon:hover {
+  background-color: #4237fe;
+  transition: 0.3s;
 }
 
 .yesterday {
@@ -1626,7 +1867,7 @@ b {
 .plus {
   width: 20px;
   height: 20px;
-  margin-top: 17px;
+  margin-top: 22px;
   color: white;
   cursor: pointer;
 }
@@ -1634,6 +1875,7 @@ b {
 .typeMessage {
   width: 80%;
   margin-left: 15px;
+  padding-top: 10px;
   background: none;
   border: none;
   outline: none;
@@ -1649,6 +1891,7 @@ b {
   position: relative;
   left: 10px;
   padding: 15px;
+  top: 5px;
 }
 
 .smiles {

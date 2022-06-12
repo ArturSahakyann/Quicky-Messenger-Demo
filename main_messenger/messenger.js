@@ -416,21 +416,6 @@ closeeeNn.onclick = function() {
   close.style.display = "none"
 }
 
-const off = document.querySelectorAll(".off")
-const on = document.querySelectorAll(".on")
-
-// off.onclick = function () {
-// 	on.style.position = "relative"
-// 	on.style.left = "53%"
-// 	off.style.background = "#665dfe"
-// 	on.style.background = "white"
-// }
-
-// itemTwo.style.position = "relative"
-// itemTwo.style.left = "53%"
-// item.style.background = "#665dfe"
-// itemTwo.style.background = "white"
-
 const settings = document.querySelector(".settings")
 const settingsClose = document.querySelector(".settingsClose")
 const menuForSettings = document.querySelector(".menuForSettings")
@@ -532,8 +517,10 @@ const forText = document.querySelector(".forText")
 
 catherineRichardson.onclick = function() {
   catherineRichardson.style.background = "#665dfe"
+  chatForGroups.style.background = "none"
   forText.style.color = "white"
   catherineRichardsonChat.style.display = "block"
+  themeForestGroup.style.display = "none"
   welcome.style.display = "none"
 }
 
@@ -546,13 +533,20 @@ caherineSearch.onclick = function () {
 }
 
 const view = document.querySelector(".view")
+const viewTwo = document.querySelector(".viewTwo")
 const viewInfo = document.querySelector(".viewInfo")
 const closeThree = document.querySelector(".closeElementThree")
+const viewGroupInformation = document.querySelector(".viewGroupInformation")
 const viewItems = document.querySelectorAll(".viewItems")
 
 view.onclick = function () {
   closeThree.style.display = "block"
   viewInfo.classList.toggle("viewList")
+}
+
+viewTwo.onclick = function() {
+  closeThree.style.display = "block"
+  viewGroupInformation.classList.toggle("groupInformationList")
 }
 
 closeThree.onclick = function () {
@@ -570,7 +564,9 @@ viewItems.forEach(function (item) {
 const addressInformation = document.querySelector(".addressInformation")
 const addressInfoTitle = document.querySelector(".addressInfoTitle")
 const viewINF = document.querySelector(".viewINF")
+const secondView = document.querySelector(".viewINFsec")
 const profileDetails = document.querySelector(".profileDetails")
+const groupDetials = document.querySelector(".groupProfileDetials")
 const closeDetails = document.querySelector(".closeDetails")
 
 addressInfoTitle.onclick = () => {
@@ -579,6 +575,10 @@ addressInfoTitle.onclick = () => {
 
 viewINF.onclick = function () {
   profileDetails.classList.toggle("userINFlist")
+}
+
+secondView.onclick = function() {
+ groupDetials.classList.toggle("userINFsec")
 }
 
 closeDetails.onclick = function () {
@@ -590,4 +590,51 @@ const mediaInformation = document.querySelector(".mediaInformation")
 
 lastImages.onclick = () => {
   mediaInformation.classList.toggle("mediaList")
+}
+
+const documents = document.querySelector(".documents")
+const documentInfo = document.querySelector(".documentInformation")
+
+documents.onclick = () => {
+  documentInfo.classList.toggle("docInfoList")
+}
+
+const themeForestGroup = document.querySelector(".themeForestGroup")
+const chatForGroups = document.querySelector(".chatForGroups")
+
+chatForGroups.onclick = function() {
+  catherineRichardson.style.background = "none"
+  chatForGroups.style.background = "#665dfe"
+  forText.style.color = "white"
+  catherineRichardsonChat.style.display = "none"
+  themeForestGroup.style.display = "block"
+  welcome.style.display = "none"
+}
+
+const groupUsers = document.querySelector(".groupUsers")
+const groupUsersList = document.querySelector(".groupUsersList")
+
+groupUsers.onclick = () => {
+  groupUsersList.classList.toggle("groupHeight")
+}
+
+const lastGroupImages = document.querySelector(".lastGroupImages")
+const groupMediaInformation = document.querySelector(".groupMediaInformation")
+
+lastGroupImages.onclick = () => {
+  groupMediaInformation.classList.toggle("groupMediaList")
+}
+
+const groupDocumentInformation = document.querySelector(".groupDocumentInformation")
+const groupDocumentItems = document.querySelector(".groupDocumentItems")
+const cloze = document.querySelector(".cloze")
+const groupProfileDetials = document.querySelector(".groupProfileDetials")
+
+groupDocumentInformation.onclick = () => {
+  groupDocumentItems.classList.toggle("gdItemsList")
+}
+
+cloze.onclick = () => {
+  groupProfileDetials.style.display = "none"
+  viewGroupInformation.style.display = "none"
 }
